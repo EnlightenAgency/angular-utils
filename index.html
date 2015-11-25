@@ -11,6 +11,10 @@
 				margin: 20px auto;
 				max-width: 960px;
 			}
+			h1 {
+				font-size: 48px;
+				text-align: center;
+			}
 			-->
 		</style>
 	</head>
@@ -19,11 +23,19 @@
 		<div ng-view>
 			<article ng-controller="MainCtrl as main">
 				<h1>enl.utils</h1>
+
+				<h2>on-repeat-rendered [directive]</h2>
+				<p>Watch the console.</p>
+				<ul>
+					<li ng-repeat="item in main.items" on-repeat-rendered event-name="list-repeated">{{::item}}</li>
+				</ul>
 			</article>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 		<script src="enl.utils.module.js"></script>
+		<script src="onRepeatRendered.dir.js"></script>
+		<script src="mediaCheck.js"></script>
 		<script src="sampleApp.js"></script>
 	</body>
 </html>
