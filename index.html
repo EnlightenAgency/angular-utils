@@ -24,18 +24,20 @@
 			<article ng-controller="MainCtrl as main">
 				<h1>enl.utils</h1>
 
-				<h2>on-repeat-rendered [directive]</h2>
+				<h2>repeat-complete [directive]</h2>
 				<p>Watch the console.</p>
 				<ul>
-					<li ng-repeat="item in main.items" on-repeat-rendered event-name="list-repeated">{{::item}}</li>
+					<li ng-repeat="item in main.items" repeat-complete event="list-repeated">{{::item}}</li>
 				</ul>
 			</article>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 		<script src="enl.utils.module.js"></script>
-		<script src="onRepeatRendered.js"></script>
+		<script src="resize.js"></script>
+		<script src="ngMask.js"></script>
 		<script src="mediaCheck.js"></script>
+		<script src="repeatComplete.js"></script>
 		<script src="sampleApp.js"></script>
 	</body>
 </html>

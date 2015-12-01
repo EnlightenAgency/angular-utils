@@ -2,5 +2,5 @@
 	'use strict';
 
 	angular
-		.module('enl.utils', ['mediaCheck', 'onRepeatRendered']);
+		.module('enl.utils', ['mediaCheck', 'repeatComplete', 'ngMask', 'resize']);
 })();
